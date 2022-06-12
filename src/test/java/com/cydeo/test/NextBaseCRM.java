@@ -11,7 +11,7 @@ public class NextBaseCRM extends TestBase {
     @Test
     public void loginTest() {
         //1.Go to home page
-        driver.get("https://login2.nextbasecrm.com/");
+        driver.get("https://login2.nextbasecrm.com/" );
         //2.Log in with the right credentials
         //Username:helpdesk25@cybertekschool.com
         //Password:UserUser
