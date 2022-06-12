@@ -32,6 +32,10 @@ public class NextBaseCRM extends TestBase {
         WebElement messageTab=driver.findElement(By.xpath("//span[@class='feed-add-post-form-link feed-add-post-form-link-active']"));
         messageTab.click();
 
+        //5.Click send button leaving the message field empty
+        WebElement sendBtn=driver.findElement(By.xpath("//button[@id='blog-submit-button-save']"));
+        sendBtn.click();
+
 
 
 
