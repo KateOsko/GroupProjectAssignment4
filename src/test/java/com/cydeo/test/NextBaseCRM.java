@@ -18,9 +18,19 @@ public class NextBaseCRM extends TestBase {
         //Password:UserUser
         WebElement userName= driver.findElement(By.xpath("//input[@placeholder='Login']"));
         userName.sendKeys("helpdesk25@cybertekschool.com");
-//3.Click logIn button
+
+        //password added
+        WebElement passWord= driver.findElement(By.xpath("//input[@placeholder='Password']"));
+        passWord.sendKeys("UserUser");
+
+
+        //3.Click logIn button
         WebElement loginBtn=driver.findElement(By.xpath("//input[@value='Log In']"));
         loginBtn.click();
+
+
+
+
 
     }
 }
