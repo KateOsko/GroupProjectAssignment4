@@ -47,6 +47,3 @@ public class NextBaseCRM extends TestBase {
 }
 
 
-
-    }
-}
