@@ -12,6 +12,8 @@ public class NextBaseCRM extends TestBase {
     public void loginTest() {
         //1.Go to home page
         driver.get("https://login2.nextbasecrm.com/");
+        WebElement userName= driver.findElement(By.xpath("//input[@placeholder='Login']"));
+        userName.sendKeys("helpdesk25@cybertekschool.com");
 
     }
 }
