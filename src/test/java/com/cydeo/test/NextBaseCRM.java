@@ -35,9 +35,15 @@ public class NextBaseCRM extends TestBase {
         //5.Click send button leaving the message field empty
         WebElement sendBtn=driver.findElement(By.xpath("//button[@id='blog-submit-button-save']"));
         sendBtn.click();
-
-
-
-
+        //6.verify the error message is displayed
+        // Expected error message: The message title is not specified
+        WebElement errorMsg=driver.findElement(By.xpath("//span[.='The message title is not specified']"));
+        errorMsg.isDisplayed();
+        String actualMsg= errorMsg.getText();
+        String expectedMsg="The message title is not specified";
+        assertEquals(actualMsg,expectedMsg,"Test failed");
     }
+
 }
+
+
