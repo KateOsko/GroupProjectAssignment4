@@ -28,6 +28,9 @@ public class NextBaseCRM extends TestBase {
         WebElement loginBtn=driver.findElement(By.xpath("//input[@value='Log In']"));
         loginBtn.click();
 
+        //4.Find Message Tab in the middle top menu and click it
+        WebElement messageTab=driver.findElement(By.xpath("//span[@class='feed-add-post-form-link feed-add-post-form-link-active']"));
+        messageTab.click();
 
 
 
